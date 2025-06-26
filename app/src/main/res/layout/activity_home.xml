@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Header / App Bar -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingTop="10dp"
+        android:background="#3F51B5"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Expense App"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:id="@+id/centerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+        <!-- Greeting -->
+<!--        <TextView-->
+<!--            android:id="@+id/greetingText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Manage your expenses"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginBottom="6dp" />-->
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track your expenses and stay on budget."
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Add Expense -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Add New Expense"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3F51B5"
+            android:onClick="goToAddExpense"
+            android:layout_marginTop="8dp" />
+
+        <!-- View/Delete Expenses -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="View/Delete Expenses"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3F51B5"
+            android:onClick="goToViewExpenses"
+            android:layout_marginTop="12dp" />
+
+        <!-- Logout -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textColor="#3F51B5"
+            android:backgroundTint="#E0E0E0"
+            android:onClick="logoutUser"
+            android:layout_marginTop="20dp"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
